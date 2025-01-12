@@ -8,15 +8,23 @@ const BeforeAfterSection = () => {
         Fix data accuracy problems with <br className="hidden md:block" /> BrandNav
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
         {/* Before Section */}
-        <div className="bg-[#FFEFF5] p-6 rounded-lg shadow-md relative">
-          <img src="/images/icons/before svg.svg" alt="Before Section" />
+        <div className="flex justify-center items-center">
+          <img
+            src="/images/icons/before svg.svg"
+            alt="Before Section"
+            className="max-w-full h-auto"
+          />
         </div>
 
         {/* After Section */}
-        <div className="bg-[#EBF5FF] p-6 rounded-lg shadow-md relative">
-          <img src="/images/icons/after svg.svg" alt="After Section" />
+        <div className="flex justify-center items-center">
+          <img
+            src="/images/icons/after svg.svg"
+            alt="After Section"
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
     </div>
@@ -24,4 +32,3 @@ const BeforeAfterSection = () => {
 };
 
 export default BeforeAfterSection;
-

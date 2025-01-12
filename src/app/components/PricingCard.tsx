@@ -11,7 +11,7 @@ const PricingCard: React.FC = () => {
             {/* Container for Card and Text */}
             <div className="flex items-center space-x-16">
                 {/* Card */}
-                <div className="w-[23rem] bg-white rounded-lg shadow-lg p-10 text-center">
+                <div className="w-[26rem] bg-white rounded-lg shadow-lg p-12 text-center">
                     {/* Gift Icon */}
                     <div className="mb-4 p-1">
                         <img
@@ -25,7 +25,7 @@ const PricingCard: React.FC = () => {
                     <h2 className="text-2xl font-bold text-black mb-2">Free</h2>
 
                     {/* Price */}
-                    <p className="text-5xl font-extrabold text-#2F327D;
+                    <p className="text-5xl font-extrabold text-[#2F327D]
  mb-4">$0</p>
 
                     {/* Button */}
@@ -39,10 +39,17 @@ const PricingCard: React.FC = () => {
                     </button>
 
                     {/* Subtitle */}
-                    <p className="text-sm text-gray-500 mt-2 flex items-center">
-                        <img src="/images/icons/uil_credit-card.png" alt="" className="mr-2" />
+                    <p className="text-sm text-gray-500 mt-2 flex items-center gap-0">
+                        <img
+                            src="/images/icons/uil_credit-card.png"
+                            alt=""
+                            className="inline-block align-middle"
+                            style={{ marginRight: "0", paddingRight: "0" }}
+                        />
                         No credit card required | ⭐ 4.8/5 G2 Ratings
                     </p>
+
+
 
 
                     {/* Features */}
@@ -65,7 +72,7 @@ const PricingCard: React.FC = () => {
                         <div className="flex justify-center -space-x-2 mb-2">
                             <img src="/images/icons/headshots.svg" alt="headshots" />
                         </div>
-                        <p className="text-xs text-gray-600">
+                        <p className="text-xs text-[#2F327D]">
                             These people are already using BrandNav.<br /> When will YOU?
                         </p>
                     </div>

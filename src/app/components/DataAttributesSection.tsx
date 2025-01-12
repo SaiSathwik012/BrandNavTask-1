@@ -20,7 +20,7 @@ const DataAttributesSection: React.FC = () => {
 
     return (
         <div
-            className="bg-[#F8F9FF] py-16 px-6 text-center bg-cover bg-center"
+            className="bg-[#F8F9FF] py-14 px-12 text-center bg-cover bg-center"
             style={{
                 backgroundImage: "url('/images/base.png')", // Replace with your image path
             }}
@@ -35,7 +35,7 @@ const DataAttributesSection: React.FC = () => {
                 <h3 className="text-[#007DF2] text-xl font-semibold mb-6">
                     Screener attributes
                 </h3>
-                <div className="grid grid-cols-4 gap-0">
+                <div className="grid grid-cols-4 gap-4">
                     {/* Top Row: Four Attributes */}
                     {screenerAttributes.slice(0, 4).map((item, index) => (
                         <div key={index} className="flex flex-col items-center">
@@ -63,7 +63,7 @@ const DataAttributesSection: React.FC = () => {
                                 <img
                                     src={item.icon}
                                     alt={item.label.join(" ")}
-                                    className="w-26 h-26"
+                                    className="w-26 h-26" // Added margin-bottom of 4
                                 />
                             </div>
                             <div className="text-[#2F327D] text-xl mt-3 font-bold text-center">
@@ -74,6 +74,7 @@ const DataAttributesSection: React.FC = () => {
                         </div>
                     ))}
                 </div>
+
             </div>
 
             {/* Enricher Attributes */}

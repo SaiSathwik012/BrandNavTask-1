@@ -4,6 +4,9 @@ import PricingCard from "./components/PricingCard";
 import BrandNavDesign from "./components/BrandNavDesign";
 import DataAttributesSection from "./components/DataAttributesSection";
 import BeforeAfterSection from "./components/BeforeAfterSection";
+import Testimonials from "./components/Testimonials";
+import FAQ from "./components/FAQ";
+import PromoSection from "./components/PromoSection";
 const Home: React.FC = () => {
   return (
     <>
@@ -13,6 +16,9 @@ const Home: React.FC = () => {
       <BrandNavDesign />
       <DataAttributesSection />
       <BeforeAfterSection />
+      <Testimonials />
+      <FAQ />
+      <PromoSection />
     </>
   );
 };

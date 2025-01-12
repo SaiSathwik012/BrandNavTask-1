@@ -97,10 +97,10 @@ const BrandNavDesign = () => {
                                 />
                             </div>
                             <h3 className="text-[#2F327D] text-3xl font-semibold">
-                                Data Security
+                                Advanced search with 25+ unique <br/>filters
                             </h3>
-                            <p className="text-[#595B97] text-lg leading-relaxed mt-4 max-w-[430px]">
-                                BrandNav ensures the highest standards of data security, keeping your information safe and compliant with regulations.
+                            <p className="text-[#595B97] text-lg leading-relaxed mt-4 max-w-[470px]">
+                                BrandNav offers over 25+ filters to help users build highly segmented lists for better prospecting. With BrandNav, you can create highly targeted lists that are tailored to your specific needs, streamlining your workflow and maximizing your productivity.
                             </p>
                         </div>
                     </div>
