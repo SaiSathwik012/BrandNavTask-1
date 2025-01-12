@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 const PromoSection: React.FC = () => {
     return (
         <div className="bg-gray-50">
@@ -46,7 +46,7 @@ const PromoSection: React.FC = () => {
                                 BrandNav is an Ecom Leads Database with tons of amazing filters. Now you can get access to stores with just a simple click.
                             </p>
                             <div className="mt-20">
-                                <img src="/images/icons/Frame 1.png" alt="Frame1" />
+                                <Image src="/images/icons/Frame 1.png" alt="Frame1" width={100} height={100}/>
                             </div>
                             <div className="flex gap-4">
                                 <a href="#" aria-label="Facebook" className="text-gray-500 hover:text-gray-900">

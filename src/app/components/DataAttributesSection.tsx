@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const DataAttributesSection: React.FC = () => {
     const screenerAttributes = [
@@ -17,7 +18,6 @@ const DataAttributesSection: React.FC = () => {
         { icon: "/images/logos/Group 1000001995.svg", label: ["Job Title"] },
         { icon: "/images/logos/Group 1000001996.svg", label: ["Linkedin"] },
     ];
-
     return (
         <div
             className="bg-[#F8F9FF] py-14 px-12 text-center bg-cover bg-center"
@@ -40,10 +40,11 @@ const DataAttributesSection: React.FC = () => {
                     {screenerAttributes.slice(0, 4).map((item, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <div className="rounded-lg">
-                                <img
+                                <Image
                                     src={item.icon}
                                     alt={item.label.join(" ")}
-                                    className="w-26 h-26"
+                                    width={104}
+                                    height={104}
                                 />
                             </div>
                             <div className="text-[#2F327D] text-xl mt-3 font-bold text-center">
@@ -60,10 +61,11 @@ const DataAttributesSection: React.FC = () => {
                     {screenerAttributes.slice(4).map((item, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <div className="rounded-lg">
-                                <img
+                                <Image
                                     src={item.icon}
                                     alt={item.label.join(" ")}
-                                    className="w-26 h-26" // Added margin-bottom of 4
+                                    width={104}
+                                    height={104}
                                 />
                             </div>
                             <div className="text-[#2F327D] text-xl mt-3 font-bold text-center">
@@ -74,7 +76,6 @@ const DataAttributesSection: React.FC = () => {
                         </div>
                     ))}
                 </div>
-
             </div>
 
             {/* Enricher Attributes */}
@@ -86,10 +87,11 @@ const DataAttributesSection: React.FC = () => {
                     {enricherAttributes.map((item, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <div className="rounded-lg">
-                                <img
+                                <Image
                                     src={item.icon}
                                     alt={item.label.join(" ")}
-                                    className="w-26 h-26"
+                                    width={104}
+                                    height={104}
                                 />
                             </div>
                             <div className="text-[#2F327D] text-2xl mt-3 font-bold text-center">

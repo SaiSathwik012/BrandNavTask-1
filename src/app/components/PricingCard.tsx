@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "next/image";
 
 const PricingCard: React.FC = () => {
     return (
         <div
             className="flex items-center justify-center h-screen bg-cover bg-center"
             style={{
-                backgroundImage: 'url("/images/icons/6ea4c3381ef39497128a40933a465f56.png")', // Replace with your image path
+                backgroundImage: 'url("/images/icons/6ea4c3381ef39497128a40933a465f56.png")',
             }}
         >
             {/* Container for Card and Text */}
@@ -14,10 +15,12 @@ const PricingCard: React.FC = () => {
                 <div className="w-[26rem] bg-white rounded-lg shadow-lg p-12 text-center">
                     {/* Gift Icon */}
                     <div className="mb-4 p-1">
-                        <img
-                            src="/images/icons/gift 1.png" // Replace with your gift icon path 
+                        <Image
+                            src="/images/icons/gift 1.png"
                             alt="Gift Icon"
-                            className="w-14 h-14 mx-auto"
+                            width={56}
+                            height={56}
+                            className="mx-auto"
                         />
                     </div>
 
@@ -25,14 +28,13 @@ const PricingCard: React.FC = () => {
                     <h2 className="text-2xl font-bold text-black mb-2">Free</h2>
 
                     {/* Price */}
-                    <p className="text-5xl font-extrabold text-[#2F327D]
- mb-4">$0</p>
+                    <p className="text-5xl font-extrabold text-[#2F327D] mb-4">$0</p>
 
                     {/* Button */}
                     <button
                         className="px-4 py-2 text-white rounded hover:bg-blue-700"
                         style={{
-                            background: "#0084FF", // Retaining the background color as specified
+                            background: "#0084FF",
                         }}
                     >
                         Grab free leads
@@ -40,17 +42,15 @@ const PricingCard: React.FC = () => {
 
                     {/* Subtitle */}
                     <p className="text-sm text-gray-500 mt-2 flex items-center gap-0">
-                        <img
+                        <Image
                             src="/images/icons/uil_credit-card.png"
-                            alt=""
+                            alt="Credit Card Icon"
+                            width={16}
+                            height={16}
                             className="inline-block align-middle"
-                            style={{ marginRight: "0", paddingRight: "0" }}
                         />
                         No credit card required | ⭐ 4.8/5 G2 Ratings
                     </p>
-
-
-
 
                     {/* Features */}
                     <ul className="text-left mt-6 space-y-3">
@@ -62,15 +62,26 @@ const PricingCard: React.FC = () => {
                             "Chat support with real humans",
                         ].map((feature, index) => (
                             <li key={index} className="flex items-center text-gray-700">
-                                <span className="mr-2"><img src="/images/icons/check 1.png" alt="check" /></span>
+                                <span className="mr-2">
+                                    <Image
+                                        src="/images/icons/check 1.png"
+                                        alt="check"
+                                        width={16}
+                                        height={16}
+                                    />
+                                </span>
                                 {feature}
                             </li>
-                        ))
-                    }
+                        ))}
                     </ul>
                     <div className="mt-8">
                         <div className="flex justify-center -space-x-2 mb-2">
-                            <img src="/images/icons/headshots.svg" alt="headshots" />
+                            <Image
+                                src="/images/icons/headshots.svg"
+                                alt="headshots"
+                                width={96}
+                                height={32}
+                            />
                         </div>
                         <p className="text-xs text-[#2F327D]">
                             These people are already using BrandNav.<br /> When will YOU?
@@ -97,7 +108,6 @@ const PricingCard: React.FC = () => {
                         <span className="text-blue-400 font-bold no-underline">FREE</span> spin <br />
                         before committing
                     </p>
-
                 </div>
             </div>
         </div>

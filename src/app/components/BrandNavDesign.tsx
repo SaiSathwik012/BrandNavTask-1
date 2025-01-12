@@ -1,6 +1,7 @@
 import React from "react";
+import Image from "next/image";
 
-const BrandNavDesign = () => {  
+const BrandNavDesign = () => {
     return (
         <div className="bg-[#F2F2FA] py-16 px-6">
             {/* Header Section */}
@@ -19,20 +20,23 @@ const BrandNavDesign = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center place-items-center">
                     {/* Left Section (Image) */}
                     <div className="relative flex justify-center">
-                        <img
+                        <Image
                             src="/images/icons/image.svg"
                             alt="Browser Mockup"
-                            className="rounded-lg z-10 relative w-[700px] h-[550px] -translate-x-15"
+                            width={700}
+                            height={550}
+                            className="rounded-lg z-10 relative -translate-x-15"
                         />
                     </div>
                     {/* Right Section (Text) */}
                     <div>
                         <div className="flex flex-col items-start">
                             <div className="bg-yellow-100 p-4 rounded-full mb-6">
-                                <img
+                                <Image
                                     src="/images/icons/Frame 1000001728.svg"
                                     alt="CSV Icon"
-                                    className="w-12 h-12"
+                                    width={48}
+                                    height={48}
                                 />
                             </div>
                             <h3 className="text-[#2F327D] text-3xl font-semibold">
@@ -51,10 +55,11 @@ const BrandNavDesign = () => {
                     <div>
                         <div className="flex flex-col items-start">
                             <div className="bg-blue-100 p-4 rounded-full mb-6">
-                                <img
+                                <Image
                                     src="/images/icons/image2.svg"
                                     alt="Analytics Icon"
-                                    className="w-12 h-12"
+                                    width={48}
+                                    height={48}
                                 />
                             </div>
                             <h3 className="text-[#2F327D] text-3xl font-semibold">
@@ -68,10 +73,12 @@ const BrandNavDesign = () => {
 
                     {/* Right Section (Image) */}
                     <div className="relative flex justify-center">
-                        <img
+                        <Image
                             src="/images/icons/image2.svg"
                             alt="Browser Mockup 2"
-                            className="rounded-lg z-10 relative w-[700px] h-[550px] -translate-x-15"
+                            width={700}
+                            height={550}
+                            className="rounded-lg z-10 relative -translate-x-15"
                         />
                     </div>
                 </div>
@@ -80,24 +87,27 @@ const BrandNavDesign = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center place-items-center">
                     {/* Left Section (Image) */}
                     <div className="relative flex justify-center">
-                        <img
+                        <Image
                             src="/images/icons/image3.svg"
                             alt="Browser Mockup 3"
-                            className="rounded-lg z-10 relative w-[700px] h-[550px] -translate-x-15"
+                            width={700}
+                            height={550}
+                            className="rounded-lg z-10 relative -translate-x-15"
                         />
                     </div>
                     {/* Right Section (Text) */}
                     <div>
                         <div className="flex flex-col items-start">
-                            <div className=" rounded-full mb-2 w-30 h-30" >
-                                <img
+                            <div className="rounded-full mb-2 w-30 h-30">
+                                <Image
                                     src="/images/icons/filter (2) 1.svg"
                                     alt="Data Security Icon"
-                                    className="w-12 h-12"
+                                    width={48}
+                                    height={48}
                                 />
                             </div>
                             <h3 className="text-[#2F327D] text-3xl font-semibold">
-                                Advanced search with 25+ unique <br/>filters
+                                Advanced search with 25+ unique <br /> filters
                             </h3>
                             <p className="text-[#595B97] text-lg leading-relaxed mt-4 max-w-[470px]">
                                 BrandNav offers over 25+ filters to help users build highly segmented lists for better prospecting. With BrandNav, you can create highly targeted lists that are tailored to your specific needs, streamlining your workflow and maximizing your productivity.

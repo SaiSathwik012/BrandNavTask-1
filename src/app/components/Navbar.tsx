@@ -1,14 +1,16 @@
 import React from "react";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   return (
     <nav
-      className=" text-lg flex items-center justify-between p-6 w-full max-w-screen-full mx-auto"
-      style={{ backgroundColor: "#E6ECFA" }} // Cover entire component with this color
+      className="text-lg flex items-center justify-between p-6 w-full max-w-screen-full mx-auto"
+      style={{ backgroundColor: "#E6ECFA" }}
     >
       {/* Logo on the left with extra spacing */}
-      <div className="flex items-center" style={{ paddingLeft: "100px", marginLeft:"190px" }}> {/* Added padding-left */}
-        <img src="/images/logos/logo.svg" alt="BrandNav Logo" className="h-12 w-160" />
+      <div className="flex items-center" style={{ paddingLeft: "100px", marginLeft: "190px" }}>
+        {/* Replace <img> with <Image> */}
+        <Image src="/images/logos/logo.svg" alt="BrandNav Logo" width={160} height={12} />
       </div>
 
       {/* Navigation Links in the center */}
@@ -35,7 +37,7 @@ const Navbar: React.FC = () => {
         <button
           className="px-4 py-2 text-white rounded hover:bg-blue-700"
           style={{
-            background: "#0084FF", // Retaining the background color as specified
+            background: "#0084FF",
           }}
         >
           Start for free
