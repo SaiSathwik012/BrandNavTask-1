@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
+
 const PromoSection: React.FC = () => {
     return (
-        <div className="bg-gray-50">
+        <div className="bg-[#F2F2FA]">
             {/* Promo Banner */}
             <div className="max-w-6xl mx-auto px-6 pt-20 pb-10">
                 <div
-                    className="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-3xl shadow-lg"
+                    className="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-3xl"
                     style={{
                         backgroundImage: "url('/images/icons/Group 1000002076.svg')",
                         backgroundSize: "cover",
@@ -21,34 +22,49 @@ const PromoSection: React.FC = () => {
                             Grab free leads
                         </button>
                         <div className="mt-6 flex justify-center items-center gap-4 text-sm">
-                            <span className="flex items-center gap-2">
-                                <i className="material-icons">credit_card</i>
-                                No credit card required
-                            </span>
-                            <span>|</span>
-                            <span className="flex items-center gap-2">
-                                <i className="material-icons">star</i>
+                            <p className="text-sm text-[#ffffff] mt-2 flex items-center gap-0">
+                                <Image
+                                    src="/images/icons/uil_credit-card2.png"
+                                    alt="Credit Card Icon"
+                                    width={15}
+                                    height={15}
+                                    className="inline-block align-middle mx-1"
+                                />
+                                No credit card required |{" "}
+                                <span
+                                    className="text-xl font-semibold mx-2"
+                                    style={{
+                                        background: "linear-gradient(to right, #fbbf24 70%, #000 50%)",
+                                        WebkitBackgroundClip: "text",
+                                        color: "transparent",
+                                    }}
+                                >
+                                    ★
+                                </span>
                                 4.8/5 G2 Ratings
-                            </span>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Footer Section */}
-            <footer className="bg-white">
+            <footer className="bg-[#F2F2FA]">
                 <div className="max-w-6xl mx-auto px-6 mt-16">
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-gray-700">
-                        {/* BrandNav Info */}
-                        <div>
+                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 text-[#212529]">
+                        {/* BrandNav Info (left side) */}
+                        <div className="w-full lg:w-[293px]">
                             <h3 className="font-bold text-lg mb-3">BrandNav.io</h3>
                             <p className="text-sm mb-4">
                                 BrandNav is an Ecom Leads Database with tons of amazing filters. Now you can get access to stores with just a simple click.
                             </p>
-                            <div className="mt-20">
-                                <Image src="/images/icons/Frame 1.png" alt="Frame1" width={100} height={100}/>
+
+                            {/* Image placed below the text */}
+                            <div className="mt-6">
+                                <Image src="/images/icons/Frame 1.png" alt="Frame1" width={200} height={200} />
                             </div>
-                            <div className="flex gap-4">
+
+                            <div className="flex gap-4 mt-4">
                                 <a href="#" aria-label="Facebook" className="text-gray-500 hover:text-gray-900">
                                     <i className="fab fa-facebook-f"></i>
                                 </a>
@@ -64,41 +80,52 @@ const PromoSection: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Links */}
-                        <div>
-                            <h3 className="font-bold text-sm mb-3">Blogs</h3>
-                            <ul className="space-y-2">
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">All Blogs</a></li>
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">Cold Emailing</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="font-bold text-lg mb-3">Documentation</h3>
-                            <ul className="space-y-2">
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">Getting Started</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="font-bold text-lg mb-3">Resources</h3>
-                            <ul className="space-y-2">
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">Latest Updates</a></li>
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">Roadmap</a></li>
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">About Us</a></li>
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">Join Us</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="font-bold text-lg mb-3">Legal</h3>
-                            <ul className="space-y-2">
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">Terms & Conditions</a></li>
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">Privacy Policy</a></li>
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">Refund Policy</a></li>
-                                <li><a href="#" className="text-sm text-gray-600 hover:underline">Contact Us</a></li>
-                            </ul>
+                        {/* Links (Blogs, Documentation, Resources, Legal) - Right side */}
+                        <div className="col-span-1 lg:col-span-4 lg:ml-auto">
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-700">
+                                {/* Blogs */}
+                                <div>
+                                    <h3 className="font-bold text-sm mb-3">Blogs</h3>
+                                    <ul className="space-y-2">
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">All Blogs</a></li>
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">Cold Emailing</a></li>
+                                    </ul>
+                                </div>
+
+                                {/* Documentation */}
+                                <div>
+                                    <h3 className="font-bold text-sm mb-3">Documentation</h3>
+                                    <ul className="space-y-2">
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">Getting Started</a></li>
+                                    </ul>
+                                </div>
+
+                                {/* Resources */}
+                                <div>
+                                    <h3 className="font-bold text-sm mb-3">Resources</h3>
+                                    <ul className="space-y-2">
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">Latest Updates</a></li>
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">Roadmap</a></li>
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">About Us</a></li>
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">Join Us</a></li>
+                                    </ul>
+                                </div>
+
+                                {/* Legal */}
+                                <div>
+                                    <h3 className="font-bold text-sm mb-3">Legal</h3>
+                                    <ul className="space-y-2">
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">Terms & Conditions</a></li>
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">Privacy Policy</a></li>
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">Refund Policy</a></li>
+                                        <li><a href="#" className="text-sm text-[#008EFF] hover:underline">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <hr />
-                    <div className="mt-12 text-center text-sm text-gray-500">
+                    <div className="mt-12 text-center text-sm text-[#1211278F]">
                         © 2022 BrandNav. All rights reserved
                     </div>
                 </div>

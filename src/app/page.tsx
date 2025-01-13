@@ -7,6 +7,7 @@ import BeforeAfterSection from "./components/BeforeAfterSection";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import PromoSection from "./components/PromoSection";
+import Who from "./components/who";
 const Home: React.FC = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
       <BrandNavDesign />
       <DataAttributesSection />
       <BeforeAfterSection />
+      <Who />
       <Testimonials />
       <FAQ />
       <PromoSection />

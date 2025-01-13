@@ -3,8 +3,10 @@ import Image from "next/image";
 
 const HomeSection = () => {
   return (
-    <div className="bg-[#E6ECFA] min-h-screen flex flex-col items-center justify-center py-10 px-4">
-      <h1 className="text-6xl font-bold text-center text-gray-800 mb-4">
+    <div
+      className="min-h-screen flex flex-col items-center justify-center py-10 px-4 bg-gradient-to-b from-[#E6ECFA] via-[#F0F0F8] to-[#F2F2FA]"
+    >
+      <h1 className="text-6xl font-[600] text-center text-[#0D2052] mb-4">
         Weapons to grow <br /> your Business
       </h1>
       <p className="text-lg text-gray-500 text-center mb-6">
@@ -20,19 +22,26 @@ const HomeSection = () => {
         <Image
           src="/images/icons/uil_credit-card.png"
           alt="Credit Card Icon"
-          width={20}
-          height={20}
+          width={15}
+          height={15}
           className="inline-block align-middle mx-1"
         />
         No credit card required |{" "}
         <span className="text-yellow-500 text-xl font-semibold mx-2">
-          ★★★★★
-        </span>{" "}
+          ★★★★
+          <span className="text-transparent" style={{
+            background: "linear-gradient(to right, #fbbf24 70%, #000 50%)",
+            WebkitBackgroundClip: "text"
+          }}>
+            ★
+          </span>
+        </span>
+
         4.8/5 G2 Ratings
       </p>
 
       {/* Statistics Cards */}
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-4 gap-4 max-w-5xl">
+      <div className="mt- grid grid-cols-1 sm:grid-cols-4 gap-4 max-w-5xl">
         <Image
           src="/images/icons/verifier card.svg"
           alt="Verifier Card"
@@ -76,42 +85,9 @@ const HomeSection = () => {
           Modern companies are using <span className="font-bold">BrandNav</span>
         </p>
 
-        <div className="flex justify-center space-x-6">
-          <Image
-            src="/images/icons/logo 1.png"
-            alt="Logo 1"
-            layout="intrinsic"
-            width={72}
-            height={72}
-          />
-          <Image
-            src="/images/icons/logo 2.png"
-            alt="Logo 2"
-            layout="intrinsic"
-            width={72}
-            height={72}
-          />
-          <Image
-            src="/images/icons/logo 3.png"
-            alt="Logo 3"
-            layout="intrinsic"
-            width={72}
-            height={72}
-          />
-          <Image
-            src="/images/icons/logo 4.png"
-            alt="Logo 4"
-            layout="intrinsic"
-            width={72}
-            height={72}
-          />
-          <Image
-            src="/images/icons/logo 5.png"
-            alt="Logo 5"
-            layout="intrinsic"
-            width={72}
-            height={72}
-          />
+        <div className="flex justify-center">
+          <Image src="/images/icons/testimonial section.png" alt="testimonial" width={700} height={34} />
+          
         </div>
       </div>
     </div>

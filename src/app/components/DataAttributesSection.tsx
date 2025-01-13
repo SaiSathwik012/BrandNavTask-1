@@ -18,9 +18,10 @@ const DataAttributesSection: React.FC = () => {
         { icon: "/images/logos/Group 1000001995.svg", label: ["Job Title"] },
         { icon: "/images/logos/Group 1000001996.svg", label: ["Linkedin"] },
     ];
+
     return (
         <div
-            className="bg-[#F8F9FF] py-14 px-12 text-center bg-cover bg-center"
+            className="bg-[#F8F9FF] py-12 px-12 text-center bg-cover bg-center"
             style={{
                 backgroundImage: "url('/images/base.png')", // Replace with your image path
             }}
@@ -35,19 +36,19 @@ const DataAttributesSection: React.FC = () => {
                 <h3 className="text-[#007DF2] text-xl font-semibold mb-6">
                     Screener attributes
                 </h3>
-                <div className="grid grid-cols-4 gap-4">
-                    {/* Top Row: Four Attributes */}
+
+                {/* First Row: Four Attributes */}
+                <div className="grid grid-cols-4 gap-8">
                     {screenerAttributes.slice(0, 4).map((item, index) => (
                         <div key={index} className="flex flex-col items-center">
-                            <div className="rounded-lg">
-                                <Image
-                                    src={item.icon}
-                                    alt={item.label.join(" ")}
-                                    width={104}
-                                    height={104}
-                                />
-                            </div>
-                            <div className="text-[#2F327D] text-xl mt-3 font-bold text-center">
+                            <Image
+                                src={item.icon}
+                                alt={item.label.join(" ")}
+                                width={104}
+                                height={104}
+                                className="rounded-lg"
+                            />
+                            <div className="text-[#2F327D] text-xl font-bold mb-3 text-center">
                                 {item.label.map((line, i) => (
                                     <p key={i}>{line}</p>
                                 ))}
@@ -56,19 +57,18 @@ const DataAttributesSection: React.FC = () => {
                     ))}
                 </div>
 
-                {/* Centered Row: Three Attributes */}
-                <div className="flex justify-center mt-8 gap-16">
+                {/* Second Row: Three Attributes with Adjusted Space Between */}
+                <div className="flex justify-evenly mt-10">
                     {screenerAttributes.slice(4).map((item, index) => (
                         <div key={index} className="flex flex-col items-center">
-                            <div className="rounded-lg">
-                                <Image
-                                    src={item.icon}
-                                    alt={item.label.join(" ")}
-                                    width={104}
-                                    height={104}
-                                />
-                            </div>
-                            <div className="text-[#2F327D] text-xl mt-3 font-bold text-center">
+                            <Image
+                                src={item.icon}
+                                alt={item.label.join(" ")}
+                                width={104}
+                                height={104}
+                                className="rounded-lg"
+                            />
+                            <div className="text-[#2F327D] text-xl font-bold mt-3 text-center">
                                 {item.label.map((line, i) => (
                                     <p key={i}>{line}</p>
                                 ))}
@@ -83,18 +83,17 @@ const DataAttributesSection: React.FC = () => {
                 <h3 className="text-[#007DF2] text-xl font-semibold mb-6">
                     Enricher attributes
                 </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 place-items-center">
+                <div className="grid grid-cols-2 sm:grid-cols-4 place-items-center gap-8">
                     {enricherAttributes.map((item, index) => (
                         <div key={index} className="flex flex-col items-center">
-                            <div className="rounded-lg">
-                                <Image
-                                    src={item.icon}
-                                    alt={item.label.join(" ")}
-                                    width={104}
-                                    height={104}
-                                />
-                            </div>
-                            <div className="text-[#2F327D] text-2xl mt-3 font-bold text-center">
+                            <Image
+                                src={item.icon}
+                                alt={item.label.join(" ")}
+                                width={104}
+                                height={104}
+                                className="rounded-lg"
+                            />
+                            <div className="text-[#2F327D] text-2xl font-bold mt-3 text-center">
                                 {item.label.map((line, i) => (
                                     <p key={i}>{line}</p>
                                 ))}

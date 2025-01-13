@@ -12,7 +12,7 @@ const PricingCard: React.FC = () => {
             {/* Container for Card and Text */}
             <div className="flex items-center space-x-16">
                 {/* Card */}
-                <div className="w-[26rem] bg-white rounded-lg shadow-lg p-12 text-center">
+                <div className="w-[27rem] bg-white rounded-lg shadow-lg p-12 text-center">
                     {/* Gift Icon */}
                     <div className="mb-4 p-1">
                         <Image
@@ -41,19 +41,23 @@ const PricingCard: React.FC = () => {
                     </button>
 
                     {/* Subtitle */}
-                    <p className="text-sm text-gray-500 mt-2 flex items-center gap-0">
-                        <Image
-                            src="/images/icons/uil_credit-card.png"
-                            alt="Credit Card Icon"
-                            width={16}
-                            height={16}
-                            className="inline-block align-middle"
-                        />
-                        No credit card required | ⭐ 4.8/5 G2 Ratings
-                    </p>
+                    <p className="text-sm text-gray-500 mt-4 flex items-center gap-0">
+                            <Image
+                              src="/images/icons/uil_credit-card.png"
+                              alt="Credit Card Icon"
+                              width={20}
+                              height={20}
+                              className="inline-block align-middle mx-1"
+                            />
+                            No credit card required |{" "}
+                            <span className="text-yellow-500 text-sm font-semibold mx-1">
+                              ★
+                            </span>{" "}
+                            4.8/5 G2 Ratings
+                          </p>
 
                     {/* Features */}
-                    <ul className="text-left mt-6 space-y-3">
+                    <ul className="text-left  mt-7 space-y-3">
                         {[
                             "All BrandNav features included",
                             "200 Screener credits per month",
@@ -61,7 +65,7 @@ const PricingCard: React.FC = () => {
                             "Pinpoint ideal prospects",
                             "Chat support with real humans",
                         ].map((feature, index) => (
-                            <li key={index} className="flex items-center text-gray-700">
+                            <li key={index} className="flex items-center text-[#141997]">
                                 <span className="mr-2">
                                     <Image
                                         src="/images/icons/check 1.png"

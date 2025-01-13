@@ -4,7 +4,7 @@ import Image from "next/image";
 const Navbar: React.FC = () => {
   return (
     <nav
-      className="text-lg flex items-center justify-between p-6 w-full max-w-screen-full mx-auto"
+      className="text-lg flex items-center justify-between p-11 w-full max-w-screen-full mx-auto"
       style={{ backgroundColor: "#E6ECFA" }}
     >
       {/* Logo on the left with extra spacing */}
@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Navigation Links in the center */}
-      <div className="flex items-center space-x-10 text-blue-900">
+      <div className="flex items-center space-x-10 text-[#0D2052]">
         <a href="#" className="hover:text-blue-600">
           Products
         </a>
@@ -31,11 +31,11 @@ const Navbar: React.FC = () => {
 
       {/* Buttons on the right */}
       <div className="flex space-x-4" style={{ paddingRight: "100px", marginRight: "190px" }}>
-        <button className="px-4 py-2 text-blue-900 border border-blue-900 rounded hover:bg-blue-100">
+        <button className="px-4 py-1 text-[#0D2052] border border-[#287DFF] rounded-[5px] bg-white">
           Login
         </button>
         <button
-          className="px-4 py-2 text-white rounded hover:bg-blue-700"
+          className="px-4 py-1 text-white rounded hover:bg-blue-700"
           style={{
             background: "#0084FF",
           }}
