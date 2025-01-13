@@ -43,12 +43,7 @@ const Who = () => {
 
     return (
         <div
-            className="min-h-screen py-12"
-            style={{
-                background:
-                    "linear-gradient(0deg, rgba(241, 246, 253, 0) -13.75%, rgba(241, 246, 253, 0.8) 20.5%, rgba(236, 244, 255, 0.8) 58.57%, rgba(255, 255, 255, 0) 100%)",
-            }}
-        >
+            className="min-h-screen py-12 bg-[#F2F2FA] ">
             <div className="max-w-7xl mx-auto px-6">
                 <h1 className="text-4xl font-bold text-center text-[#2F327D]">
                     Who is using BrandNav?
