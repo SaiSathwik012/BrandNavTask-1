@@ -10,9 +10,9 @@ const PricingCard: React.FC = () => {
             }}
         >
             {/* Container for Card and Text */}
-            <div className="flex flex-col-reverse md:flex-row items-center md:space-x-16 md:p-8 lg:p-12 xl:p-16">
+            <div className="flex flex-col-reverse md:flex-row items-center md:space-x-16">
                 {/* Card */}
-                <div className="w-[27rem] bg-white rounded-lg shadow-lg p-12 md:p-16 lg:p-20 text-center">
+                <div className="w-[27rem] bg-white rounded-lg shadow-lg p-12 text-center">
                     {/* Gift Icon */}
                     <div className="mb-4 p-1">
                         <Image
@@ -51,7 +51,7 @@ const PricingCard: React.FC = () => {
                         />
                         No credit card required |{" "}
                         <span
-                            className="text-lg font-semibold"
+                            className="text-lg font-semibold "
                             style={{
                                 background: "linear-gradient(to right, #fbbf24 70%, #000 50%)",
                                 WebkitBackgroundClip: "text",
