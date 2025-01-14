@@ -24,7 +24,7 @@ const Testimonials = () => {
                 </p>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center">
                     {/* Testimonial 1 */}
-                    <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-3xl">
+                    <div className="bg-white shadow-lg rounded-lg p-6 w-max ">
                         <div className="flex items-center w-full mb-3">
                             <Image
                                 src="/images/icons/Sk Abdul Wahed 2.png"
@@ -50,7 +50,7 @@ const Testimonials = () => {
                         </p>
                     </div>
                     {/* Testimonial 2 */}
-                    <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-3xl">
+                    <div className="bg-white shadow-lg rounded-lg p-6 w-max">
                         <div className="flex items-center w-full mb-2">
                             <Image
                                 src="/images/icons/Sairaj Matkar 1.png"

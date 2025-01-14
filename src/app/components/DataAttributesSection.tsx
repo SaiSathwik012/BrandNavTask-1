@@ -21,7 +21,7 @@ const DataAttributesSection: React.FC = () => {
 
     return (
         <div
-            className="bg-[#F8F9FF] py-12 px-12 text-center bg-cover bg-center"
+            className="bg-[#F2F2FA] py-12 px-12 text-center bg-cover bg-center"
             style={{
                 backgroundImage: "url('/images/base.png')", // Replace with your image path
             }}
@@ -38,9 +38,9 @@ const DataAttributesSection: React.FC = () => {
                 </h3>
 
                 {/* First Row: Four Attributes */}
-                <div className="grid grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {screenerAttributes.slice(0, 4).map((item, index) => (
-                        <div key={index} className="flex flex-col items-center">
+                        <div key={index} className="flex flex-col items-center text-left">
                             <Image
                                 src={item.icon}
                                 alt={item.label.join(" ")}
@@ -48,7 +48,7 @@ const DataAttributesSection: React.FC = () => {
                                 height={104}
                                 className="rounded-lg"
                             />
-                            <div className="text-[#2F327D] text-xl font-bold mb-3 text-center">
+                            <div className="text-[#2F327D] text-xl font-bold mb-3">
                                 {item.label.map((line, i) => (
                                     <p key={i}>{line}</p>
                                 ))}
@@ -58,9 +58,9 @@ const DataAttributesSection: React.FC = () => {
                 </div>
 
                 {/* Second Row: Three Attributes with Adjusted Space Between */}
-                <div className="flex justify-evenly mt-10">
+                <div className="flex justify-evenly mt-10 flex-wrap">
                     {screenerAttributes.slice(4).map((item, index) => (
-                        <div key={index} className="flex flex-col items-center">
+                        <div key={index} className="flex flex-col items-center text-left">
                             <Image
                                 src={item.icon}
                                 alt={item.label.join(" ")}
@@ -68,7 +68,7 @@ const DataAttributesSection: React.FC = () => {
                                 height={104}
                                 className="rounded-lg"
                             />
-                            <div className="text-[#2F327D] text-xl font-bold mt-3 text-center">
+                            <div className="text-[#2F327D] text-xl font-bold mt-3">
                                 {item.label.map((line, i) => (
                                     <p key={i}>{line}</p>
                                 ))}
@@ -83,9 +83,9 @@ const DataAttributesSection: React.FC = () => {
                 <h3 className="text-[#007DF2] text-xl font-semibold mb-6">
                     Enricher attributes
                 </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-4 place-items-center gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center gap-8">
                     {enricherAttributes.map((item, index) => (
-                        <div key={index} className="flex flex-col items-center">
+                        <div key={index} className="flex flex-col items-center text-left">
                             <Image
                                 src={item.icon}
                                 alt={item.label.join(" ")}
@@ -93,7 +93,7 @@ const DataAttributesSection: React.FC = () => {
                                 height={104}
                                 className="rounded-lg"
                             />
-                            <div className="text-[#2F327D] text-2xl font-bold mt-3 text-center">
+                            <div className="text-[#2F327D] text-2xl font-bold mt-3">
                                 {item.label.map((line, i) => (
                                     <p key={i}>{line}</p>
                                 ))}

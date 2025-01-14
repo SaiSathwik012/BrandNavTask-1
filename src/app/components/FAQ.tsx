@@ -36,8 +36,8 @@ const FAQ: React.FC = () => {
                                 onClick={() => toggleFAQ(index)}
                                 className="w-full flex justify-between items-center py-6 px-8 text-left text-xl focus:outline-none hover:bg-gray-100"
                             >
-                                <span className="text-gray-900 font-semibold">{faq.question}</span>
-                                <span className="text-gray-500 text-2xl">
+                                <span className="text-[#616161] font-semibold">{faq.question}</span>
+                                <span className="text-[#616161] text-2xl">
                                     {activeIndex === index ? "-" : "+"}
                                 </span>
                             </button>

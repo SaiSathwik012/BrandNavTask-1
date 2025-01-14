@@ -7,7 +7,7 @@ const Who = () => {
             image: "/images/icons/Icon-1.svg",
             title: "Sales & Marketing Teams",
             description:
-                "Sales and marketing teams are  using BrandNav to efficiently locate and verify prospect contact information and identify key decision-makers.",
+                "Sales and marketing teams are using BrandNav to efficiently locate and verify prospect contact information and identify key decision-makers.",
         },
         {
             image: "/images/icons/Icon-2(2).svg",
@@ -42,27 +42,29 @@ const Who = () => {
     ];
 
     return (
-        <div
-            className="min-h-screen py-12 bg-[#F2F2FA] ">
-            <div className="max-w-7xl mx-auto px-6">
-                <h1 className="text-4xl font-bold text-center text-[#2F327D]">
+        <div className="flex items-center justify-center min-h-screen p-8 bg-gray-100">
+            <div className="w-full max-w-7xl p-8 bg-[#F2F2FA] rounded-lg">
+                {/* Title */}
+                <h1 className="text-4xl font-bold text-center text-[#2F327D] md:text-left">
                     Who is using BrandNav?
                 </h1>
-                <p className="text-m text-center font-medium text-[#595B97] mt-3">
+                <p className="text-m text-center font-medium text-[#595B97] mt-3 md:text-left">
                     BrandNav has become an irreplaceable tool for businesses
                 </p>
 
+                {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                     {items.map((item, index) => (
                         <div
                             key={index}
-                            className="w-[305px] p-4 text-center"
+                            className="flex flex-col items-center justify-center w-full p-6 text-center rounded-lg md:text-left"
                             style={{
                                 background:
                                     "linear-gradient(0deg, rgba(241, 246, 253, 0) -13.75%, rgba(241, 246, 253, 0.8) 20.5%, rgba(236, 244, 255, 0.8) 58.57%, rgba(255, 255, 255, 0) 100%)",
                             }}
                         >
-                            <div className="w-32 h-32 mx-auto ">
+                            {/* Icon */}
+                            <div className="w-32 h-32 flex items-center justify-center">
                                 <Image
                                     src={item.image}
                                     alt={item.title}
@@ -71,10 +73,14 @@ const Who = () => {
                                     height={128}
                                 />
                             </div>
+                            {/* Title */}
                             <h3 className="text-xl font-semibold text-[#2F327D] mt-4">
                                 {item.title}
                             </h3>
-                            <p className="text-[#595B97] font-normal text-m  mt-2">{item.description}</p>
+                            {/* Description */}
+                            <p className="text-[#595B97] font-normal text-m mt-2">
+                                {item.description}
+                            </p>
                         </div>
                     ))}
                 </div>

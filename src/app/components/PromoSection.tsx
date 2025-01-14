@@ -16,30 +16,27 @@ const PromoSection: React.FC = () => {
                 >
                     <div className="absolute inset-0 bg-opacity-20"></div>
                     <div className="relative z-10 py-16 px-10 text-center">
-                        <h2 className="text-4xl font-extrabold mb-4">Want to see BrandNav in action?</h2>
-                        <p className="text-xl font-medium mb-6">Try BrandNav for free today!</p>
-                        <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-all">
+                        <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
+                            Want to see BrandNav in action?
+                        </h2>
+                        <p className="text-lg sm:text-xl font-medium mb-6">
+                            Try BrandNav for free today!
+                        </p>
+                        <button className="bg-[#0084FF] hover:bg-blue-800 text-white font-semibold py-2 px-8 rounded-lg shadow-lg transition-all">
                             Grab free leads
                         </button>
-                        <div className="mt-6 flex justify-center items-center gap-4 text-sm">
-                            <p className="text-sm text-[#ffffff] mt-2 flex items-center gap-0">
+                        <div className="mt-6 flex justify-center items-center gap-4 text-sm sm:text-base">
+                            <p className="text-white mt-2 flex items-center gap-2">
                                 <Image
                                     src="/images/icons/uil_credit-card2.png"
                                     alt="Credit Card Icon"
                                     width={15}
                                     height={15}
-                                    className="inline-block align-middle mx-1"
+                                    className="inline-block align-middle"
                                 />
                                 No credit card required |{" "}
-                                <span
-                                    className="text-xl font-semibold mx-2"
-                                    style={{
-                                        background: "linear-gradient(to right, #fbbf24 70%, #000 50%)",
-                                        WebkitBackgroundClip: "text",
-                                        color: "transparent",
-                                    }}
-                                >
-                                    ★
+                                <span className="text-yellow-500 text-m font-semibold ml-auto mx-2">
+                                    ★★★★★
                                 </span>
                                 4.8/5 G2 Ratings
                             </p>
@@ -51,7 +48,7 @@ const PromoSection: React.FC = () => {
             {/* Footer Section */}
             <footer className="bg-[#F2F2FA]">
                 <div className="max-w-6xl mx-auto px-6 mt-16">
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 text-[#212529]">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-[#212529]">
                         {/* BrandNav Info (left side) */}
                         <div className="w-full lg:w-[293px]">
                             <h3 className="font-bold text-lg mb-3">BrandNav.io</h3>
@@ -82,7 +79,7 @@ const PromoSection: React.FC = () => {
 
                         {/* Links (Blogs, Documentation, Resources, Legal) - Right side */}
                         <div className="col-span-1 lg:col-span-4 lg:ml-auto">
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-700">
+                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-gray-700">
                                 {/* Blogs */}
                                 <div>
                                     <h3 className="font-bold text-sm mb-3">Blogs</h3>
